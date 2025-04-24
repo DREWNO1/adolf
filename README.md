@@ -7,7 +7,7 @@ After installing [Mingw64](https://sourceforge.net/projects/mingw-w64/files/Tool
 ```
 g++ -c src/*.cpp -std=c++14 -O3 -Wall -m64 -I include -I C:/mingw64/x86_64-w64-mingw32/include && g++ *.o -o bin/release/main -s -L C:/mingw64/x86_64-w64-mingw32/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image && start bin/release/main
 ```
-
+or
 ```
 C:/mingw64/bin/g++.exe -mwindows -c src/*.cpp -std=c++14 -O3 -Wall -m64 -I include -I C:/mingw64/x86_64-w64-mingw32/include && C:/mingw64/bin/g++.exe -mwindows *.o -o bin/release/main -s -L C:/mingw64/x86_64-w64-mingw32/lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image  && start bin/release/main
 ```
