@@ -1,5 +1,6 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
+#include <Windows.h>
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -91,7 +92,7 @@ void game()
 }
 
 int main(int argc, char* args[]) {
-
+	ShowWindow(GetConsoleWindow(),SW_HIDE);
     while (gameRunning)
 	{
 		game();
